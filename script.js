@@ -1,6 +1,5 @@
-
-const btn = document.getElementById("btn");
+const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", function () {
-  const contactSection = document.getElementById("contact");
-  contactSection.scrollIntoView({ behavior: "smooth" });
+  alert("欢迎来到我的个人主页，很高兴认识你！");
+});

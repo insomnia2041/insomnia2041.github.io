@@ -1,70 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>丁志文的个人主页</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
+  <!-- 顶部导航 -->
+  <header class="navbar">
     <div class="logo">我的主页</div>
-    <div class="nav-links">
+    <nav>
       <a href="#about">关于我</a>
       <a href="#skills">技能</a>
       <a href="#projects">项目</a>
       <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <img src="my_photo.jpg" alt="我的头像" class="avatar">
+    <h1>你好，我是kom</h1>
+    <p>一名打工人，正在学习前端开发。</p>
+    <a href="#contact" class="btn">联系我</a>
+  </section>
+
+  <!-- 关于我 -->
+  <section class="card" id="about">
+    <h2>关于我</h2>
+    <p>
+      我正在系统学习 HTML、CSS 和 JavaScript，希望以后可以独立完成个人网站、
+      企业官网和简单的 Web 应用开发。
+    </p>
+  </section>
+
+  <!-- 技能 -->
+  <section class="card" id="skills">
+    <h2>我的技能</h2>
+    <div class="skill-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>VS Code</span>
+      <span>GitHub</span>
     </div>
-  </nav>
+  </section>
 
-  <div class="container">
-    <header class="hero">
-      <img class="avatar" src="my_photo.jpg" alt="我的头像" />
-      <h1>你好，我是丁志文</h1>
-      <p class="subtitle">一名打工人，正在学习做网站。</p>
-      <button id="btn">联系我</button>
-    </header>
+  <!-- 项目展示 -->
+  <section class="card" id="projects">
+    <h2>项目展示</h2>
 
-    <section class="card" id="about">
-      <h2>关于我</h2>
-      <p>
-        我正在系统学习 HTML、CSS 和 JavaScript，希望以后可以独立完成个人网站、
-        企业官网和简单的 Web 应用开发。
-      </p>
-    </section>
-
-    <section class="card" id="skills">
-      <h2>我的技能</h2>
-      <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>VS Code</span>
-        <span>GitHub</span>
-      </div>
-    </section>
-
-    <section class="card" id="projects">
-      <h2>项目展示</h2>
-
+    <div class="project-list">
       <div class="project-item">
         <h3>我的第一个网页</h3>
-        <p>使用 HTML、CSS、JavaScript 制作的入门网页，包含按钮点击交互。</p>
+        <p>使用 HTML、CSS、JavaScript 制作的入门网页，包含基础布局和按钮点击交互。</p>
       </div>
 
       <div class="project-item">
         <h3>个人简介页面</h3>
-        <p>可以展示头像、个人介绍、技能和联系方式的静态网页。</p>
+        <p>这是我自己制作的个人主页，包含头像、个人介绍、技能展示、项目展示和联系方式。</p>
       </div>
-    </section>
 
-    <section class="card" id="contact">
-      <h2>联系方式</h2>
-      <p>邮箱：insomnia2041@gmail.com</p>
-      <p>微信：你的微信号</p>
-    </section>
-  </div>
+      <div class="project-item">
+        <h3>GitHub Pages 网站部署</h3>
+        <p>我已经学会把本地网页上传到 GitHub，并成功部署到 GitHub Pages 上线访问。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系方式 -->
+  <section class="card" id="contact">
+    <h2>联系方式</h2>
+    <p>邮箱：insomnia2041@gmail.com</p>
+    <p>GitHub：<a href="https://github.com/insomnia2041" target="_blank">github.com/insomnia2041</a></p>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>© 2026 丁志文的个人主页 | 用 HTML + CSS + JavaScript 制作</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
+</html>
